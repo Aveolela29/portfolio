@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#ecf7ff">
+  <meta name="description" content="张一凡的 AIGC 影像、动画、广告与分镜作品集。">
+  <title>从灵感到画面 · AIGC 作品集</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23244e96' d='M16 0c2 10 6 14 16 16-10 2-14 6-16 16C14 22 10 18 0 16 10 14 14 10 16 0Z'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" type="module"></script>
+</head>
+<body id="top">
+  <a class="skip" href="#videos">跳到作品列表</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="wordmark" href="#top"><span class="spark" aria-hidden="true"></span>影像手记</a>
+      <nav aria-label="主导航"><a href="#selected">精选</a><a href="#videos">全部作品</a><a href="#skills">技能</a><a href="#documents">资料</a></nav>
+      <button class="share-button" type="button" id="share-site"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 13.9a4 4 0 0 0 5.7 0l3.4-3.4a4 4 0 0 0-5.7-5.7l-1.8 1.8m2.4 3.5a4 4 0 0 0-5.7 0l-3.4 3.4a4 4 0 0 0 5.7 5.7l1.8-1.8"/></svg><span>分享作品集</span></button>
+    </div>
+  </header>
+  <main>
+    <div class="hero-shell">
+      <section class="container hero" aria-labelledby="main-title">
+        <div class="hero-copy">
+          <p class="hero-label"><span><strong class="hero-name">张一凡</strong><span class="hero-label-divider" aria-hidden="true"> · </span>AIGC 作品集</span></p>
+          <h1 id="main-title">从灵感<br><em>到画面</em><span class="period" aria-hidden="true">。</span></h1>
+          <p class="hero-description">动画、短片、广告与分镜设计</p>
+          <div class="hero-actions"><a class="primary-link" href="#videos">浏览全部作品</a></div>
+        </div>
+        <div class="hero-overview">
+          <section id="skills" class="hero-skills" aria-labelledby="skills-title">
+            <div class="section-heading"><h2 id="skills-title">创作技能与工具</h2></div>
+            <div class="skills-grid">
+              <article class="skill-card"><h3>图像生成与视觉设定</h3><ul aria-label="图像工具"><li>Midjourney</li><li>ChatGPT</li><li>即梦</li><li>WebUI / ComfyUI</li><li>Photoshop</li></ul></article>
+              <article class="skill-card"><h3>视频生成与配乐</h3><ul aria-label="视频与音频工具"><li>LibTV</li><li>Vidu</li><li>可灵 Kling</li><li>即梦</li><li>MiniMax</li><li>Runway</li><li>Suno</li></ul></article>
+              <article class="skill-card"><h3>剪辑与后期</h3><ul aria-label="后期工具"><li>DaVinci Resolve</li><li>剪映</li><li>Adobe Premiere</li></ul></article>
+            </div>
+          </section>
+          <section id="documents" class="hero-documents" aria-labelledby="documents-title">
+            <div class="section-heading"><h2 id="documents-title">简历与资料</h2></div>
+            <div class="document-grid" id="document-grid"></div>
+            <div class="archive-link"><a class="underlink" href="https://pan.baidu.com/s/1seUEaPR4xxsIjaMfW2og1g?pwd=vjur" target="_blank" rel="noopener noreferrer">百度网盘备份（高清版本）</a><span>提取码 <code>vjur</code></span></div>
+          </section>
+        </div>
+        <figure class="hero-visual">
+          <img class="hero-portrait" src="assets/creator-seaside.jpg" alt="张一凡围着蓝色围巾，坐在海边的秋千上" width="2832" height="4240" fetchpriority="high">
+        </figure>
+      </section>
+    </div>
+    <div class="container"><p class="state-message" id="catalog-error" role="status" hidden>暂时无法加载作品，请刷新页面重试。</p></div>
+    <section id="selected" class="section" aria-labelledby="selected-title" hidden>
+      <div class="container">
+        <div class="section-heading"><h2 id="selected-title">精选作品</h2></div>
+        <div id="featured-panel" class="featured-panel"></div>
+        <div id="featured-choices" class="featured-choices" role="group" aria-label="切换精选作品"></div>
+      </div>
+    </section>
+    <section id="videos" class="section" aria-labelledby="videos-title">
+      <div class="container">
+        <div class="section-heading"><h2 id="videos-title">全部作品</h2><p id="video-count" class="section-meta"></p></div>
+        <div class="toolbar" id="toolbar" hidden>
+          <div class="filters" id="filters" role="group" aria-label="按类型与状态筛选"></div>
+          <div class="search">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="5.8"/><path d="m15.1 15.1 4.1 4.1"/></svg>
+            <label class="sr-only" for="search">搜索作品</label>
+            <input id="search" type="search" placeholder="搜索作品" autocomplete="off">
+          </div>
+        </div>
+        <p class="sr-only" role="status" id="results-status"></p>
+        <div class="work-grid" id="work-grid"></div>
+        <p class="state-message" id="catalog-state" hidden></p>
+        <button class="secondary-link more-button" id="show-more" type="button" hidden>查看更多作品</button>
+        <noscript><p class="state-message">请启用 JavaScript 来浏览作品。</p></noscript>
+      </div>
+    </section>
+  </main>
+  <footer><div class="container footer"><a class="wordmark" href="#top"><span class="spark" aria-hidden="true"></span>影像手记</a><a href="#top">返回顶部</a></div></footer>
+  <dialog id="work-dialog" aria-labelledby="dialog-title">
+    <div class="dialog-inner">
+      <div class="dialog-header"><div><p id="dialog-type" class="section-meta"></p><h2 id="dialog-title"></h2></div><button class="close-button" type="button" aria-label="关闭预览" autofocus><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button></div>
+      <div id="detail-layout" class="detail-layout">
+        <div class="detail-media"><p class="dialog-description" id="dialog-description"></p><div id="viewer"></div><div class="dialog-actions" id="dialog-actions"></div></div>
+        <aside class="note" id="creative-note" aria-labelledby="note-title" hidden><h3 id="note-title">创作说明</h3><div id="note-content"></div></aside>
+      </div>
+      <nav class="dialog-nav" id="dialog-nav" aria-label="浏览其他作品" hidden></nav>
+    </div>
+  </dialog>
+  <dialog id="share-dialog" aria-labelledby="share-title"><div class="dialog-inner"><div class="dialog-header"><h2 id="share-title">分享链接</h2><button class="close-button" type="button" aria-label="关闭分享">×</button></div><label class="sr-only" for="share-url">可分享的网址</label><input id="share-url" type="url" readonly></div></dialog>
+  <p class="toast" id="toast" role="status" hidden></p>
+</body>
+</html>

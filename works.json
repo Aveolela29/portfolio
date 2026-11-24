@@ -1,0 +1,335 @@
+[
+  {
+    "id": "resume",
+    "title": "简历",
+    "type": "pdf",
+    "subtitle": "个人简历",
+    "tone": "sage",
+    "url": "assets/zhang-yifan-resume.pdf",
+    "description": "AIGC 方向个人简历。"
+  },
+  {
+    "id": "portfolio-pdf",
+    "title": "作品集",
+    "type": "pdf",
+    "subtitle": "作品汇总",
+    "tone": "rose",
+    "url": "assets/zhang-yifan-portfolio.pdf",
+    "description": "张一凡的 AIGC 作品集。"
+  },
+  {
+    "id": "xianxia-trailer",
+    "title": "《剑问苍穹》仙侠动作预告片",
+    "type": "video",
+    "category": "预告片",
+    "orientation": "landscape",
+    "tone": "sage",
+    "cover": "assets/xianxia-cover.webp",
+    "tags": [
+      "仙侠",
+      "动作"
+    ],
+    "url": "assets/jian-wen-cang-qiong.mp4",
+    "duration": "00:56",
+    "shortTitle": "《剑问苍穹》",
+    "featuredTitleBreak": true,
+    "description": "昔日同门在不周山巅宿命对决。一支围绕「同源殊途、正邪一念」展开的东方仙侠概念预告。",
+    "note": {
+      "page": 7,
+      "sections": [
+        {
+          "label": "创作构思",
+          "body": "以正道剑修与堕魔魔尊的对决为主线，用写实 CG 呈现东方仙侠的世界观和斗法场面。"
+        },
+        {
+          "label": "制作流程",
+          "body": "先构思情节，借助豆包完善剧本、分镜和设定提示词。用即梦和 GPT 生成角色、场景、道具与分镜关键帧，在 LibTV 中用 Seedance 2.0 逐镜生成动态，最后用剪映完成剪辑、音效和配乐。"
+        }
+      ],
+      "tools": [
+        "豆包",
+        "即梦",
+        "GPT",
+        "LibTV",
+        "Seedance 2.0",
+        "剪映"
+      ]
+    },
+    "featured": true,
+    "year": 2026
+  },
+  {
+    "id": "award-animation-short",
+    "title": "《游不到海水变蓝》",
+    "type": "video",
+    "category": "动漫短片",
+    "orientation": "landscape",
+    "tone": "rose",
+    "award": "首届高校 AIGC 数字艺术设计大赛 · 数字艺术影像赛道二等奖",
+    "cover": "assets/sea-whale-cover.webp",
+    "featuredCover": "assets/sea-cover.webp",
+    "tags": [
+      "获奖动漫短片",
+      "动画"
+    ],
+    "url": "assets/you-bu-dao-hai-shui-bian-lan.mp4",
+    "duration": "03:52",
+    "shortTitle": "《游不到海水变蓝》",
+    "description": "月光下，女孩追着金色鱼群潜入海中。水母像一盏盏灯漂过，一头巨鲸从深处游来。她朝它伸出手，巨鲸会把她带到哪里？",
+    "note": {
+      "page": 14,
+      "sections": [
+        {
+          "label": "制作流程",
+          "body": "原创剧本，用 Midjourney 生成分镜，以可灵为主、即梦为辅制作动态画面。配乐由 Suno 生成，旁白用 FireRed TTS 克隆本人的音色，最后在达芬奇中完成剪辑与调色。"
+        },
+        {
+          "label": "难点与解决",
+          "body": "为解决早期生成画面中人物、风格和色调难以保持一致的问题，调整 Midjourney 参数和提示词，并用后期遮罩、调色保持镜头连贯。"
+        }
+      ],
+      "tools": [
+        "Midjourney",
+        "可灵",
+        "即梦",
+        "Suno",
+        "FireRed TTS",
+        "DaVinci Resolve"
+      ]
+    },
+    "featured": true,
+    "year": 2024
+  },
+  {
+    "id": "game-ad",
+    "title": "《Foundation: Galactic Frontier》游戏广告",
+    "type": "video",
+    "category": "广告",
+    "orientation": "portrait",
+    "tone": "lilac",
+    "cover": "assets/game-cover.webp",
+    "url": "assets/foundation-galactic-frontier.mp4",
+    "duration": "00:47",
+    "shortTitle": "游戏玩法广告",
+    "description": "以一次异星迫降切入，展示基地生存、舱内经营和飞船组装玩法的竖屏游戏广告。",
+    "note": {
+      "page": 21,
+      "sections": [
+        {
+          "label": "玩法展示",
+          "body": "主角迫降后进入废弃舱室，修复设备、清理舱内杂物，在种植舱里培育作物，并抵御闯入舱内的异星生物。广告以「怎么回家」串起这些操作，最后用模块逐一装上船体的镜头展示飞船组装，再以起飞收尾。"
+        },
+        {
+          "label": "制作流程",
+          "body": "使用 ChatGPT 生成图像，再用 MiniMax 和 Vidu 进行图生视频与参考生视频，最后使用剪映完成剪辑与配乐。"
+        }
+      ],
+      "tools": [
+        "ChatGPT",
+        "MiniMax",
+        "Vidu",
+        "剪映"
+      ]
+    },
+    "coverFit": "cover",
+    "coverPosition": "portrait-focus",
+    "year": 2026
+  },
+  {
+    "id": "storyboard",
+    "title": "《千里“疆”山图》生图分镜",
+    "type": "pdf",
+    "subtitle": "甲方：新疆日报",
+    "tone": "sand",
+    "project": true,
+    "category": "生图分镜",
+    "description": "新疆日报 70 周年宣传片的生图分镜。可预览作品集里的四页分镜节选。",
+    "cover": "assets/xinjiang-cover.webp",
+    "url": "assets/xinjiang-storyboard.pdf",
+    "tags": [
+      "新疆日报",
+      "新疆",
+      "宣传片",
+      "分镜"
+    ],
+    "shortTitle": "千里“疆”山图",
+    "note": {
+      "page": 28,
+      "sections": [
+        {
+          "label": "创作范围",
+          "body": "为新疆日报 70 周年宣传片制作生图分镜。这组分镜画面均使用 AI 生成。"
+        }
+      ],
+      "tools": []
+    },
+    "year": 2025
+  },
+  {
+    "id": "vidu-demo",
+    "title": "Vidu 特效模板封面演示",
+    "type": "video",
+    "category": "特效演示",
+    "tone": "rose",
+    "orientation": "landscape",
+    "cover": "assets/vidu-cover.webp",
+    "coverFit": "cover",
+    "note": {
+      "page": 25,
+      "sections": [
+        {
+          "label": "项目职责",
+          "body": "参与 Vidu 创作者生态的内容和工具建设，主导特效模板调研，并参与模板开发、测试、提示词调优与封面视频生成。"
+        },
+        {
+          "label": "封面制作",
+          "body": "用 Midjourney 生成封面图像，再用 Vidu 制作动态封面。"
+        }
+      ],
+      "tools": [
+        "Midjourney",
+        "Vidu"
+      ]
+    },
+    "shortTitle": "Vidu 特效模板",
+    "url": "assets/vidu-demo.mp4",
+    "duration": "04:09",
+    "year": 2025
+  },
+  {
+    "id": "vocabulary-app-ad",
+    "title": "SparkMo 单词 App 广告",
+    "type": "video",
+    "category": "广告",
+    "tone": "sand",
+    "orientation": "landscape",
+    "cover": "assets/sparkmo-100-words-cover.webp",
+    "tags": [
+      "单词",
+      "App 广告"
+    ],
+    "note": {
+      "page": 26,
+      "sections": [
+        {
+          "label": "制作流程",
+          "body": "以即梦进行文生图，用 Veo 制作图生视频与文生视频，最后在剪映中完成剪辑和特效制作。"
+        }
+      ],
+      "tools": [
+        "即梦",
+        "Veo",
+        "剪映"
+      ]
+    },
+    "url": "assets/sparkmo.mp4",
+    "duration": "01:38",
+    "description": "SparkMo 单词 App 的三段广告合辑。",
+    "year": 2025
+  },
+  {
+    "id": "destination-promo",
+    "title": "《瓷世奇旅》",
+    "type": "video",
+    "category": "文旅宣传片",
+    "tone": "sky",
+    "award": "洪岩镇「新质影像」AIGC 短视频 48 小时极限创作一等奖",
+    "orientation": "landscape",
+    "cover": "assets/destination-cover.webp",
+    "description": "在 48 小时内完成的景点宣传片，以现场采风和 AI 生成结合的方式呈现景观。",
+    "note": {
+      "page": 19,
+      "sections": [
+        {
+          "label": "项目职责",
+          "body": "实地走访「溶岩仙境」拍摄取材，由本人执笔剧本，并与同组成员共同担任导演。"
+        },
+        {
+          "label": "制作流程",
+          "body": "将实地照片与 AI 视觉概念图结合，生成符合实地景观特征的视频镜头。成片中的视频素材均由 AI 生成。"
+        }
+      ],
+      "tools": []
+    },
+    "shortTitle": "瓷世奇旅",
+    "url": "assets/destination-promo.mp4",
+    "duration": "02:50",
+    "tags": [
+      "景点宣传片",
+      "溶岩仙境"
+    ],
+    "year": 2025
+  },
+  {
+    "id": "realistic-fiction-short",
+    "title": "《被我弄丢的东西》",
+    "type": "video",
+    "category": "写实风格创意剧情短片",
+    "tone": "sage",
+    "inProgress": true,
+    "orientation": "landscape",
+    "tags": [
+      "写实",
+      "剧情短片"
+    ],
+    "description": "出门前，林夏觉得自己落下了什么。一场临阵放弃的面试，让这件说不出名字的失物有了第一条线索。",
+    "featuredDescription": "手机、钥匙、钱包都在，林夏还是觉得少了什么东西。等候室里有人叫她的名字，她只把简历攥得更紧......",
+    "note": {
+      "sections": [
+        {
+          "label": "创意与叙事",
+          "body": "24 岁的林夏总觉得弄丢了什么，翻遍住处却一无所获。面试临阵退缩、投稿反复犹豫、邀约迟迟不敢发送，她困在对失败的预判里。直到一张童年旧照与一场梦境，让她终于找回了那份被自己弄丢的勇气。"
+        },
+        {
+          "label": "制作与进度",
+          "body": "使用 ChatGPT 辅助生成剧本、角色图和场景设定图，再在即梦画布中用 Seedance 2.5 生成视频素材。目前已完成前三分之一的素材生成和粗剪，本站展示的粗剪片段为 2 分 23 秒。"
+        }
+      ],
+      "tools": [
+        "ChatGPT",
+        "即梦画布",
+        "Seedance 2.5"
+      ]
+    },
+    "url": "assets/lost-things.mp4",
+    "cover": "assets/lost-things-title-cover.webp",
+    "duration": "02:23",
+    "plannedDuration": "6–7 分钟",
+    "year": 2026,
+    "featured": true,
+    "shortTitle": "《被我弄丢的东西》"
+  },
+  {
+    "id": "song-mv",
+    "title": "《牵丝戏》MV",
+    "type": "video",
+    "category": "音乐影像",
+    "tone": "lilac",
+    "inProgress": true,
+    "orientation": "landscape",
+    "cover": "assets/qian-si-xi-cover.webp",
+    "tags": [
+      "古风",
+      "歌曲 MV"
+    ],
+    "description": "受古风歌曲《牵丝戏》启发的原创剧情 MV。",
+    "note": {
+      "page": 33,
+      "sections": [
+        {
+          "label": "制作流程",
+          "body": "先创作原创剧本，并用 ChatGPT 生成分镜脚本和画面，再用 MiniMax 与 Vidu 将图片和参考素材转成动态镜头，最后在剪映中剪辑与配乐。"
+        }
+      ],
+      "tools": [
+        "ChatGPT",
+        "MiniMax",
+        "Vidu",
+        "剪映"
+      ]
+    },
+    "url": "assets/qian-si-xi.mp4",
+    "duration": "00:36",
+    "year": 2026
+  }
+]
